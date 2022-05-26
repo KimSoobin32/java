@@ -35,6 +35,15 @@ public class For_plus {
 		 * 구구단 2단 2*1 ~ 2*9의 총 합계를 출력
 		 * 정답 합계 90
 		 */
+		int b;
+		int g = 2;	//단
+		int r;	//곱
+		int h = 0;	//합
+		for(b=1;b<10;b++) {
+			r = g * b;
+			h = h + r;			
+		}
+		System.out.println(h);
 
 	}
 
