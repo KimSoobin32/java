@@ -17,22 +17,26 @@ public class Example2 {
 		 * 반복문 안에는 합구함, 짝수냐 홀수냐를 조건문에서
 		 */
 		Scanner s = new Scanner(System.in);
-		int d = 1;
-		int g;
-		int h = 0;
-		System.out.println("구구단에 대한 숫자를 입력하세요.");
+		String msg = "구구단에 대한 숫자를 입력하세요.";
+		String msg2;	//메세지 구분, 증복 줄이기
+		int d = 1;	//반복
+		int g;	//단
+		int h = 0;	//합
+		System.out.println(msg);
 		g = s.nextInt();
 		s.close();
 		do {
-			h = h + (g * d);
+			h = h + (g * d);	//h += g*d;
 			d++;
 		}while(d<=9);
 		if(h%2==0) {
-			System.out.println(h+" 짝수");
+//			System.out.println(h+" 결과값은 짝수입니다.");
+			msg2 = "짝수";
 		} else {
-			System.out.println(h+" 홀수");
+//			System.out.println(h+" 홀수");
+			msg2 = "홀수";
 		}
-		
+		System.out.println("결과값은 " + msg2 + "입니다.");
 
 	}
 
